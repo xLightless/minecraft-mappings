@@ -49,6 +49,22 @@ public final class DedicatedPlayerList {
 }
 ```
 
+## How to use?
+### Option 1
+Select your Minecraft server version -> Scripts -> `generate-maps-full.py` -> Copy into project -> type in the class, method or field you require.
+
+### Option 2 (WIP)
+Create a `lib` folder inside your Gradle project and place the JAR file in there. After, go to your `pom.xml` and insert into `dependencies` this:
+```xml
+        <dependency>
+            <groupId>com.reeceturner.mappings</groupId>
+            <artifactId>mappings</artifactId>
+            <version>1.21.6</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/minecraft-mappings-1.21.6.jar</systemPath>
+        </dependency>
+```
+
 ## Resources
 - [Minecraft Mappings in Excel](https://github.com/xLightless/minecraft-mappings/blob/main/1.21.6/server/build/libs/minecraft-mappings-1.21.6.xlsx)
 - [Minecraft Mappings Maven References](https://github.com/xLightless/minecraft-mappings/blob/main/1.21.6/server/build/libs/minecraft-mappings-1.21.6.jar)
