@@ -1,0 +1,34 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+group = 'com.reeceturner.minecraft'
+version = '1.21.6'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    archiveBaseName.set("minecraft-mappings")
+    archiveVersion.set(version)
+    archiveClassifier.set("") // ensures no '-plain' or '-all' suffix
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        mavenLocal() // install with ./gradlew publishToMavenLocal
+    }
+}
