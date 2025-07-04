@@ -68,5 +68,5 @@ Create a `lib` folder inside your Gradle project and place the JAR file in there
 ## Resources
 - [Minecraft Mappings in Excel](https://github.com/xLightless/minecraft-mappings/blob/main/1.21.6/server/build/libs/minecraft-mappings-1.21.6.xlsx)
 - [Minecraft Mappings Maven References](https://github.com/xLightless/minecraft-mappings/blob/main/1.21.6/server/build/libs/minecraft-mappings-1.21.6.jar)
-# To do:
+## To do:
 - Add injection methods for simplifying programming paradigms.
